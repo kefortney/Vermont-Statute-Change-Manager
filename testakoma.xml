@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="act">
+    <meta>
+      <identification source="#source">
+        <FRBRWork>
+          <FRBRthis value="/akn/us-vt/act/2010/berlin-charter-amendment/!main"/>
+          <FRBRuri value="/akn/us-vt/act/2010/berlin-charter-amendment"/>
+          <FRBRdate date="2010-03-02" name="Generation"/>
+          <FRBRauthor href="#legislature"/>
+          <FRBRcountry value="us"/>
+          <FRBRsubtype value="charter-amendment"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/us-vt/act/2010/berlin-charter-amendment/eng@2010-03-02/!main"/>
+          <FRBRuri value="/akn/us-vt/act/2010/berlin-charter-amendment/eng@2010-03-02"/>
+          <FRBRdate date="2010-03-02" name="Expression"/>
+          <FRBRauthor href="#legislature"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/us-vt/act/2010/berlin-charter-amendment/eng@2010-03-02/!main.xml"/>
+          <FRBRuri value="/akn/us-vt/act/2010/berlin-charter-amendment/eng@2010-03-02.xml"/>
+          <FRBRdate date="2024-12-17" name="XMLConversion"/>
+          <FRBRauthor href="#converter"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2010-03-02" name="enacted" showAs="Enacted"/>
+      <references source="#source">
+        <TLCOrganization eId="legislature" href="/akn/us-vt/legislature" showAs="Vermont General Assembly"/>
+        <TLCOrganization eId="source" href="#" showAs="Original Source"/>
+        <TLCPerson eId="converter" href="#" showAs="Document Converter"/>
+      </references>
+    </meta>
+    <preface>
+      <p>
+        <docType>Act</docType>
+      </p>
+    </preface>
+    <preamble>
+      <p>It is hereby enacted by the General Assembly of the State of Vermont:</p>
+    </preamble>
+    <body>
+      <section eId="sec_1">
+        <num>Sec. 1.</num>
+        <heading>CHARTER APPROVAL</heading>
+        <content>
+          <p>The general assembly approves the amendments to the charter of the town of Berlin as provided in this act. Proposals of amendment were approved by the voters on March 2, 2010.</p>
+        </content>
+      </section>
+      
+      <section eId="sec_2">
+        <num>Sec. 2.</num>
+        <heading>24 App. V.S.A. chapter 105 § 42 is amended to read:</heading>
+        <subsection eId="sec_2__subsec_42">
+          <num>§ 42.</num>
+          <heading>ELECTED OFFICERS</heading>
+          <content>
+            <p>The following officers of the town and such other town officers as are provided by law and previous vote of the electorate as to number, length of term and manner of election at an annual meeting shall be elected by Australian ballot, unless otherwise stated, and shall include the following:</p>
+            <blockList eId="sec_2__subsec_42__list_1">
+              <item eId="sec_2__subsec_42__list_1__item_1">
+                <num>(1)</num>
+                <p>A moderator to be elected by paper ballot from the floor, for a term of one year;</p>
+              </item>
+              <item eId="sec_2__subsec_42__list_1__item_2">
+                <num>(2)</num>
+                <p>A town clerk, for a term of three years;</p>
+              </item>
+              <item eId="sec_2__subsec_42__list_1__item_3">
+                <num>(3)</num>
+                <p>Selectboard members, three of whom shall serve staggered three year terms and two of whom shall serve one year terms;</p>
+              </item>
+            </blockList>
+            <p>Such other town officers as the town shall order as provided by law.</p>
+          </content>
+        </subsection>
+      </section>
+      
+      <section eId="sec_3">
+        <num>Sec. 3.</num>
+        <heading>24 App. V.S.A. chapter 105 § 50 is added to read:</heading>
+        <subsection eId="sec_3__subsec_50">
+          <num>§ 50.</num>
+          <heading>ASSESSOR</heading>
+          
+          <subsection eId="sec_3__subsec_50__subsec_a">
+            <num>(a)</num>
+            <content>
+              <p>The selectboard may appoint an assessor or arrange for assessing services. Appointees shall be competent in assessment procedures and shall serve at the pleasure of the selectboard. Appointees shall have the same powers, duties, responsibilities, and liabilities as established by law for listers, except as otherwise provided in this charter.</p>
+            </content>
+          </subsection>
+          
+          <subsection eId="sec_3__subsec_50__subsec_b">
+            <num>(b)</num>
+            <content>
+              <p>Prior to appointing an assessor, the selectboard shall appoint a committee, composed of three members of the selectboard and four residents of the town of Berlin, to review and recommend to the selectboard qualified candidates for the position of assessor. The committee shall have the authority to solicit candidates, to advertise notice of the vacancy in the assessor's position, and to make such investigation of a candidate's credentials and background as the committee deems appropriate. Upon completion of the investigation and interviewing of candidates, the committee shall submit to the selectboard the names of those candidates deemed qualified for the position of assessor. The selectboard shall appoint an assessor from among those deemed qualified by the committee. In the event that the committee does not submit at least three qualified candidates to the selectboard, the selectboard shall either appoint an assessor from among the qualified candidates or notify the committee, in writing, that none of the candidates shall be appointed. The committee shall then reconvene and submit the names of additional qualified candidates to the selectboard.</p>
+            </content>
+          </subsection>
+          
+          <subsection eId="sec_3__subsec_50__subsec_c">
+            <num>(c)</num>
+            <content>
+              <p>The selectboard shall appoint an assessor or, if applicable, notify the committee that none of the candidates shall be appointed, no later than 30 days following submission of the names of candidates deemed qualified by the committee.</p>
+            </content>
+          </subsection>
+          
+          <subsection eId="sec_3__subsec_50__subsec_d">
+            <num>(d)</num>
+            <content>
+              <p>Members of the committee described in subsection (b) of this section shall serve until an assessor is appointed by the selectboard. Meetings of the committee shall be warned and conducted as public meetings in accordance with the requirements of Vermont statutes and this charter, and the committee shall be entitled to meet in executive session as authorized by Vermont statutes.</p>
+            </content>
+          </subsection>
+        </subsection>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>
