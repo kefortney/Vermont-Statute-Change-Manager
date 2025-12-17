@@ -108,7 +108,12 @@ class BaseScraper:
         Returns:
             BeautifulSoup object
         """
-        return BeautifulSoup(html_content, 'lxml')
+        # Try lxml parser first (faster), fall back to html.parser if not available
+        try:
+            return BeautifulSoup(html_content, 'lxml')
+        except Exception:
+            self.logger.warning("lxml parser not available, falling back to html.parser")
+            return BeautifulSoup(html_content, 'html.parser')
     
     def find_pdf_links(self, soup):
         """
