@@ -1,6 +1,7 @@
 """
 Scraper for Vermont acts
 """
+import re
 from urllib.parse import urljoin
 from config.settings import ACTS_URL
 from .base_scraper import BaseScraper
@@ -44,7 +45,6 @@ class ActScraper(BaseScraper):
                 }
                 
                 # Try to extract act number from title or URL
-                import re
                 act_match = re.search(r'Act\s*No\.\s*\d+', title, re.IGNORECASE)
                 if act_match:
                     metadata['act_number'] = act_match.group(0)

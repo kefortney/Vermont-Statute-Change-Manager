@@ -1,6 +1,7 @@
 """
 Scraper for Vermont bills
 """
+import re
 from urllib.parse import urljoin
 from config.settings import BILLS_URL
 from .base_scraper import BaseScraper
@@ -45,7 +46,6 @@ class BillScraper(BaseScraper):
                 
                 # Try to extract bill number from title or URL
                 # Bills are typically formatted as H.123 or S.456
-                import re
                 bill_match = re.search(r'[HS]\.?\s*\d+', title, re.IGNORECASE)
                 if bill_match:
                     metadata['bill_number'] = bill_match.group(0)

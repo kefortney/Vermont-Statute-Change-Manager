@@ -18,10 +18,16 @@ class XMLGenerator:
         """Initialize the XML generator"""
         self.logger = setup_logger("xml_generator")
         
+        # Directory name mapping for document types
+        self.dir_mapping = {
+            'statute': 'statutes',
+            'bill': 'bills',
+            'act': 'acts'
+        }
+        
         # Ensure XML output directories exist
-        os.makedirs(os.path.join(XML_DIR, 'statutes'), exist_ok=True)
-        os.makedirs(os.path.join(XML_DIR, 'bills'), exist_ok=True)
-        os.makedirs(os.path.join(XML_DIR, 'acts'), exist_ok=True)
+        for dir_name in self.dir_mapping.values():
+            os.makedirs(os.path.join(XML_DIR, dir_name), exist_ok=True)
     
     def generate_xml(self, parsed_data, scraper_metadata=None):
         """
@@ -250,9 +256,9 @@ class XMLGenerator:
         base_name = os.path.splitext(original_filename)[0]
         xml_filename = f"{base_name}.xml"
         
-        # Determine output directory
-        if document_type in ['statute', 'bill', 'act']:
-            output_dir = os.path.join(XML_DIR, f"{document_type}s")
+        # Determine output directory using mapping
+        if document_type in self.dir_mapping:
+            output_dir = os.path.join(XML_DIR, self.dir_mapping[document_type])
         else:
             output_dir = XML_DIR
         
