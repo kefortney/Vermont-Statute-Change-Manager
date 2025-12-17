@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="act">
+    <meta>
+      <identification source="#source">
+        <FRBRWork>
+          <FRBRthis value="/akn/us-vt/act/2025/ACTM005 As Enacted/!main"/>
+          <FRBRuri value="/akn/us-vt/act/2025/ACTM005 As Enacted"/>
+          <FRBRdate date="2025-12-17" name="Generation"/>
+          <FRBRauthor href="#legislature"/>
+          <FRBRcountry value="us"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/us-vt/act/2025/ACTM005 As Enacted/eng@2025-12-17/!main"/>
+          <FRBRuri value="/akn/us-vt/act/2025/ACTM005 As Enacted/eng@2025-12-17"/>
+          <FRBRdate date="2025-12-17" name="Expression"/>
+          <FRBRauthor href="#legislature"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/us-vt/act/2025/ACTM005 As Enacted/eng@2025-12-17/!main.xml"/>
+          <FRBRuri value="/akn/us-vt/act/2025/ACTM005 As Enacted/eng@2025-12-17.xml"/>
+          <FRBRdate date="2025-12-17" name="XMLConversion"/>
+          <FRBRauthor href="#converter"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2025-12-17" name="enacted" showAs="Enacted"/>
+      <references source="#source">
+        <TLCOrganization eId="legislature" href="/akn/us-vt/legislature" showAs="Legislature"/>
+        <TLCOrganization eId="source" href="#" showAs="Original Source"/>
+        <TLCPerson eId="converter" href="#" showAs="Document Converter"/>
+      </references>
+    </meta>
+    <preface>
+      <p>
+        <docType>Actm005 As Enacted</docType>
+      </p>
+    </preface>
+    <preamble>
+      <p>No. M-5</p>
+      <p>Page 1 of 6</p>
+      <p>2025</p>
+      <p>VT LEG #384192 v.1</p>
+      <p>No. M-5.  An act relating to approval of amendments to the charter of the</p>
+      <p>City of Rutland.</p>
+      <p>(H.504)</p>
+      <p>It is hereby enacted by the General Assembly of the State of Vermont:</p>
+    </preamble>
+    <body>
+      <section eId="sec_1">
+        <num>Sec. 1.</num>
+        <heading>CHARTER AMENDMENT APPROVAL</heading>
+        <content>
+          <p>The General Assembly approves the amendments to the charter of the City</p>
+          <p>of Rutland as set forth in this act.  Voters approved the proposals of</p>
+          <p>amendment on November 5, 2024 and March 4, 2025.</p>
+        </content>
+      </section>
+      <section eId="sec_2">
+        <num>Sec. 2.</num>
+        <heading>24 App. V.S.A. chapter 9 is amended to read:</heading>
+        <content>
+          <p>CHAPTER 9.  CITY OF RUTLAND</p>
+          <p>* * *</p>
+        </content>
+        <subsection eId="sec_2__subsec_5">
+          <num>§ 5.</num>
+          <heading>3.  VIOLATION OF ORDINANCES</heading>
+          <subsection eId="sec_2__subsec_5__subsec_a">
+            <num>(a)</num>
+            <content>
+              <p>The Board of Aldermen may provide penalties for the violation of any</p>
+              <p>ordinance, regulation, or bylaw.  In no case shall the penalty exceed</p>
+              <p>imprisonment for one year or a fine of $500.00, or both, per violation the</p>
+              <p>maximum penalty allowed under 24 V.S.A. § 1974.</p>
+              <p>* * *</p>
+            </content>
+          </subsection>
+        </subsection>
+        <subsection eId="sec_2__subsec_8">
+          <num>§ 8.</num>
+          <heading>5.  ASSESSMENT OF TAXES</heading>
+          <content>
+            <blockList eId="sec_2__subsec_8__list_1">
+              <item eId="sec_2__subsec_8__list_1__item_2">
+                <num>(2)</num>
+                <p>Taxes required for general City purposes, which shall not exceed</p>
+                <p>$.85 $0.85 upon the dollar of the grand list except if a larger sum has been</p>
+                <p>authorized by the legal voters of the City in a meeting warned for that purpose;</p>
+                <p>but the tax for general City purposes shall not include the tax annually assessed</p>
+                <p>on the grand list for the support of the schools in the City.</p>
+                <p>* * *</p>
+              </item>
+              <item eId="sec_2__subsec_8__list_1__item_5">
+                <num>(5)</num>
+                <p>Taxes required for the replacement for fire equipment, which shall</p>
+                <p>not exceed $.0175 $0.0225 on the dollar of the grand list, except if a larger</p>
+                <p>sum has been authorized by the legal voters of the City in a meeting warned for</p>
+                <p>that purpose.</p>
+              </item>
+              <item eId="sec_2__subsec_8__list_1__item_6">
+                <num>(6)</num>
+                <p>Taxes required for the municipal employees pension fund, which</p>
+                <p>shall not exceed $.06 $0.06 on the dollar of the grand list, except if a larger</p>
+                <p>sum has been authorized by the legal voters of the City in a meeting warned for</p>
+                <p>that purpose.</p>
+              </item>
+              <item eId="sec_2__subsec_8__list_1__item_7">
+                <num>(7)</num>
+                <p>Taxes required for the replacement of public works, police, and</p>
+                <p>recreation equipment, which shall not exceed $.012 $0.012 on the dollar of the</p>
+                <p>grand list, except if a larger sum has been authorized by the legal voters of the</p>
+                <p>City in a meeting warned for that purpose.</p>
+                <p>* * *</p>
+              </item>
+              <item eId="sec_2__subsec_8__list_1__item_10">
+                <num>(10)</num>
+                <p>Taxes required for the replacement of police equipment, which</p>
+                <p>shall not exceed $0.018 on the dollar of the grand list, except if a larger sum</p>
+                <p>No. M-5</p>
+                <p>Page 3 of 6</p>
+                <p>2025</p>
+                <p>VT LEG #384192 v.1</p>
+                <p>has been authorized by the legal voters of the City in a meeting warned for that</p>
+                <p>purpose.</p>
+                <p>* * *</p>
+              </item>
+            </blockList>
+            <p>The Board of Aldermen shall annually, during the first twenty (20) 20 days</p>
+            <p>of July, assess upon the grand list of the City taxes sufficient to meet the</p>
+            <p>following requirement:</p>
+            <p>* * *</p>
+            <p>No. M-5</p>
+            <p>Page 2 of 6</p>
+            <p>2025</p>
+            <p>VT LEG #384192 v.1</p>
+          </content>
+        </subsection>
+        <subsection eId="sec_2__subsec_17">
+          <num>§ 17.</num>
+          <heading>3.  REQUISITIONS</heading>
+          <subsection eId="sec_2__subsec_17__subsec_a">
+            <num>(a)</num>
+            <content>
+              <p>All purchases made under section 17.1 of this charter shall be made</p>
+              <p>upon written requisitions therefor upon the Purchasing Agent.  The Purchasing</p>
+              <p>Agent shall immediately proceed to purchase under the provisions of the</p>
+              <p>ordinances the property so required and to distribute it accordingly taking a</p>
+              <p>receipt therefor upon the original requisition.  The Purchasing Agent shall then</p>
+              <p>forward the requisition to the City Clerk.  Purchases in excess of $3,000.00 the</p>
+              <p>amount identified in the City’s Purchasing Policy shall be awarded upon bids</p>
+              <p>as hereinafter set forth in this subchapter.</p>
+              <p>* * *</p>
+            </content>
+          </subsection>
+        </subsection>
+        <subsection eId="sec_2__subsec_36">
+          <num>§ 36.</num>
+          <heading>5.  BOARD OF COMMISSIONERS,; COMPOSITION</heading>
+          <subsection eId="sec_2__subsec_36__subsec_a">
+            <num>(a)</num>
+            <content>
+              <p>The administration, management, and supervision of the Authority shall</p>
+              <p>be vested in a Board of Commissioners, except as provided otherwise herein.</p>
+              <p>The Board shall consist of nine members, all of whom shall be residents of the</p>
+              <p>City of Rutland for their respective terms of office. One member of the Board</p>
+              <p>shall be the City Treasurer, and one member will be appointed from the Board</p>
+              <p>of Aldermen for a one year term. The remaining seven members of the Board</p>
+              <p>shall be appointed by the Mayor with the approval of the Board of Aldermen</p>
+              <p>pursuant to the charter of the City of Rutland. All members appointed except</p>
+              <p>No. M-5</p>
+              <p>Page 4 of 6</p>
+              <p>2025</p>
+              <p>VT LEG #384192 v.1</p>
+              <p>for members appointed for creation of this Board shall serve for periods of</p>
+              <p>three years. Upon creation, three members shall be appointed for a term to</p>
+              <p>expire on April 1 of the third calendar year after appointment; two members</p>
+              <p>shall be appointed for a term to expire April 1 of the second calendar year after</p>
+              <p>appointment; and two members shall be appointed for a term to expire on April</p>
+              <p>1 of the first calendar year after appointment. All terms shall thereafter expire</p>
+              <p>on April 1 of the third calendar year following appointment. A person</p>
+              <p>appointed to fill an unexpired term shall serve to the end of that term. At the</p>
+              <p>creation of the Commission, the appointments may only be denied by a</p>
+              <p>majority vote of the Board of Aldermen and then thereafter, all appointments</p>
+              <p>will be made pursuant to the charter of the City:</p>
+            </content>
+          </subsection>
+          <subsection eId="sec_2__subsec_36__subsec_b">
+            <num>(b)</num>
+            <content>
+              <p>Except for members appointed for the creation of the Board, members</p>
+              <p>shall serve for three-year terms.</p>
+              <p>No. M-5</p>
+              <p>Page 5 of 6</p>
+              <p>2025</p>
+              <p>VT LEG #384192 v.1</p>
+            </content>
+          </subsection>
+          <subsection eId="sec_2__subsec_36__subsec_c">
+            <num>(c)</num>
+            <content>
+              <p>Upon creation, three members shall be appointed for a term to expire on</p>
+              <p>April 1 of the third year after appointment, two members shall be appointed for</p>
+              <p>a term to expire April 1 of the second year after appointment, and two</p>
+              <p>members shall be appointed for a term to expire on April 1 of the first year</p>
+              <p>after appointment.  All terms shall thereafter expire on April 1 of the third</p>
+              <p>calendar year following appointment.  A person appointed to fill an unexpired</p>
+              <p>term shall serve to the end of that term.  At the creation of the Commission, the</p>
+              <p>appointments may only be denied by a majority vote of the Board of</p>
+              <p>Aldermen, and thereafter all appointments shall be made pursuant to this</p>
+              <p>charter.</p>
+            </content>
+          </subsection>
+          <subsection eId="sec_2__subsec_36__subsec_d">
+            <num>(d)</num>
+            <content>
+              <p>Annually the Board shall elect a Chair, Treasurer, and Clerk whose</p>
+              <p>names shall be certified to the City Clerk.</p>
+            </content>
+          </subsection>
+          <subsection eId="sec_2__subsec_36__subsec_c">
+            <num>(c)</num>
+            <content>
+              <p>(e)  If any commissioner or employee of an Authority owns or controls</p>
+              <p>an interest, direct or indirect, in any property included or planned to be</p>
+              <p>included in any project, he or she the commissioner or employee immediately</p>
+              <p>shall disclose the same in writing to the Authority and such disclosure shall be</p>
+              <p>entered upon the minutes of the Authority, and that person will shall refrain</p>
+              <p>from any participation in that matter, but will shall not be precluded from</p>
+              <p>involvement in any other matters.</p>
+              <p>* * *</p>
+              <p>No. M-5</p>
+              <p>Page 6 of 6</p>
+              <p>2025</p>
+              <p>VT LEG #384192 v.1</p>
+            </content>
+          </subsection>
+          <content>
+            <blockList eId="sec_2__subsec_36__list_1">
+              <item eId="sec_2__subsec_36__list_1__item_1">
+                <num>(1)</num>
+                <p>the City Treasurer;</p>
+              </item>
+              <item eId="sec_2__subsec_36__list_1__item_2">
+                <num>(2)</num>
+                <p>one member, appointed by the Board of Aldermen for a one-year</p>
+                <p>term;</p>
+              </item>
+              <item eId="sec_2__subsec_36__list_1__item_3">
+                <num>(3)</num>
+                <p>six members, who shall be residents of the City for their respective</p>
+                <p>terms of office, appointed by the Mayor with the approval of the Board of</p>
+                <p>Aldermen pursuant to this charter; and</p>
+              </item>
+              <item eId="sec_2__subsec_36__list_1__item_4">
+                <num>(4)</num>
+                <p>one member, who shall be a property owner within the City and a</p>
+                <p>resident of Rutland County, appointed by the Mayor with the approval of the</p>
+                <p>Board of Aldermen pursuant to this charter.</p>
+              </item>
+            </blockList>
+          </content>
+        </subsection>
+      </section>
+      <section eId="sec_2a">
+        <num>Sec. 2a.</num>
+        <heading>REDESIGNATION</heading>
+        <content>
+          <p>24 App. V.S.A. chapter 155E (Town of West Rutland) is redesignated as</p>
+          <p>24 App. V.S.A. chapter 162.</p>
+        </content>
+      </section>
+      <section eId="sec_3">
+        <num>Sec. 3.</num>
+        <heading>EFFECTIVE DATE</heading>
+        <content>
+          <p>This act shall take effect on passage.</p>
+          <p>Date Governor signed bill:  June 5, 2025</p>
+        </content>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>

@@ -13,7 +13,7 @@ Install dependencies (preferably in a virtualenv or conda env):
 pip install -r requirements.txt
 ```
 
-This uses `pypdf` for text extraction (falls back to `PyPDF2` if installed).
+This uses `PyMuPDF` for text extraction and removes struck-through text. If `PyMuPDF` is not available, it falls back to `pypdf` / `PyPDF2` but will not remove strikeouts in that mode.
 
 ## Usage
 

@@ -21,6 +21,10 @@ except Exception:
         from PyPDF2 import PdfReader
     except Exception:
         PdfReader = None
+try:
+    import fitz  # PyMuPDF
+except Exception:
+    fitz = None
 
 
 class AkomaNtosoConverter:
@@ -195,10 +199,11 @@ class AkomaNtosoConverter:
             # Check for numbered item
             numbered_match = re.match(numbered_item_pattern, line)
             if numbered_match:
+                content_text = numbered_match.group(2).strip()
                 item = {
                     'type': 'numbered_item',
                     'number': numbered_match.group(1),
-                    'content': numbered_match.group(2)
+                    'content': [content_text] if content_text else []
                 }
                 if current_subsection:
                     current_subsection['items'].append(item)
@@ -211,12 +216,21 @@ class AkomaNtosoConverter:
                 structure['preamble'].append(line)
             elif current_subsection:
                 # Add to last item if it exists, otherwise to subsection content
-                if current_subsection['items'] and current_subsection['items'][-1]['type'] == 'lettered_subsection':
-                    current_subsection['items'][-1]['content'].append(line)
-                else:
-                    current_subsection['content'].append(line)
+                if current_subsection['items']:
+                    last_item = current_subsection['items'][-1]
+                    if last_item['type'] == 'lettered_subsection':
+                        last_item['content'].append(line)
+                        continue
+                    if last_item['type'] == 'numbered_item':
+                        last_item['content'].append(line)
+                        continue
+                current_subsection['content'].append(line)
             elif current_section:
-                current_section['content'].append(line)
+                # If the last section content is a numbered item, append as continuation
+                if current_section['content'] and isinstance(current_section['content'][-1], dict) and current_section['content'][-1].get('type') == 'numbered_item':
+                    current_section['content'][-1]['content'].append(line)
+                else:
+                    current_section['content'].append(line)
         
         return structure
     
@@ -273,8 +287,15 @@ class AkomaNtosoConverter:
                             num_item = SubElement(item_elem, "num")
                             num_item.text = f"({item['number']})"
                             
-                            p = SubElement(item_elem, "p")
-                            p.text = item['content']
+                            # Support multiple paragraphs for the item content
+                            content_lines = item.get('content', [])
+                            if isinstance(content_lines, list):
+                                for line in content_lines:
+                                    p = SubElement(item_elem, "p")
+                                    p.text = line
+                            else:
+                                p = SubElement(item_elem, "p")
+                                p.text = str(content_lines)
                         elif isinstance(item, str):
                             p = SubElement(content_elem, "p")
                             p.text = item
@@ -329,8 +350,14 @@ class AkomaNtosoConverter:
                             num_item = SubElement(item_elem, "num")
                             num_item.text = f"({item['number']})"
                             
-                            p = SubElement(item_elem, "p")
-                            p.text = item['content']
+                            content_lines = item.get('content', [])
+                            if isinstance(content_lines, list):
+                                for line in content_lines:
+                                    p = SubElement(item_elem, "p")
+                                    p.text = line
+                            else:
+                                p = SubElement(item_elem, "p")
+                                p.text = str(content_lines)
                     
                     if subsec['content']:
                         if not lettered_subsections and not numbered_items:
@@ -365,6 +392,117 @@ class AkomaNtosoConverter:
         return self.prettify_xml(xml_root)
 
 
+def extract_pdf_text_with_pymupdf(pdf_path: str) -> str:
+    if fitz is None:
+        return ""
+    doc = fitz.open(pdf_path)
+    pages_text = []
+    for page in doc:
+        # Collect strikeout annotation rects (if any)
+        strike_rects = []
+        try:
+            a = page.first_annot
+            while a:
+                atype = getattr(a, "type", None)
+                name = None
+                if isinstance(atype, tuple) and len(atype) >= 2:
+                    name = atype[1]
+                if name == "StrikeOut":
+                    try:
+                        strike_rects.append(fitz.Rect(a.rect))
+                    except Exception:
+                        pass
+                a = a.next
+        except Exception:
+            pass
+
+        # Collect likely horizontal stroke lines (potential strike-throughs)
+        stroke_lines = []
+        try:
+            for path in page.get_cdrawings():
+                if path.get("type") not in ("s", "fs"):
+                    continue
+                for it in path.get("items", []):
+                    if not it or it[0] != "l":
+                        continue
+                    _, p1, p2 = it
+                    ydiff = abs(p1[1] - p2[1])
+                    if ydiff <= 1.5:  # nearly horizontal, ~2 points tolerance
+                        y = (p1[1] + p2[1]) / 2.0
+                        x0 = min(p1[0], p2[0])
+                        x1 = max(p1[0], p2[0])
+                        if x1 - x0 > 2.0:  # ignore tiny dashes
+                            stroke_lines.append((y, x0, x1))
+        except Exception:
+            pass
+
+        def char_is_struck(bbox):
+            try:
+                x0, y0, x1, y1 = bbox
+            except Exception:
+                return False
+            if x1 <= x0 or y1 <= y0:
+                return False
+            h = y1 - y0
+            band_y0 = y0  # widen band to full height
+            band_y1 = y1
+            width = x1 - x0
+            for y, lx0, lx1 in stroke_lines:
+                if y < band_y0 or y > band_y1:
+                    continue
+                overlap = max(0.0, min(x1, lx1) - max(x0, lx0))
+                if overlap >= 0.2 * width:
+                    return True
+            return False
+
+        # Use rawdict to drop characters detected as struck-through
+        d = page.get_text("rawdict")
+        lines_out = []
+        for block in d.get("blocks", []):
+            if block.get("type", 0) != 0:
+                continue
+            for line in block.get("lines", []):
+                buf = []
+                for span in line.get("spans", []):
+                    s_cf = int(span.get("char_flags", 0))
+                    if s_cf & 1:
+                        continue
+                    chars = span.get("chars", [])
+                    if not chars:
+                        text = span.get("text", "")
+                        if text:
+                            buf.append(text)
+                        continue
+                    for ch in chars:
+                        c = ch.get("c", "")
+                        bbox = ch.get("bbox")
+                        if not c:
+                            continue
+                        if bbox and char_is_struck(bbox):
+                            continue
+                        buf.append(c)
+                text_line = "".join(buf).strip()
+                if text_line:
+                    lines_out.append(text_line)
+        pages_text.append("\n".join(lines_out))
+    return "\n\n".join(pages_text).strip()
+
+
+def extract_pdf_text_with_pypdf(pdf_path: str) -> str:
+    if PdfReader is None:
+        return ""
+    reader = PdfReader(pdf_path)
+    extracted = []
+    for page in getattr(reader, "pages", []):
+        try:
+            text = page.extract_text() or ""
+        except Exception:
+            text = ""
+        text = text.replace("\r\n", "\n").replace("\r", "\n")
+        extracted.append(text)
+    return "\n\n".join(extracted).strip()
+
+
 def main():
     """Pipeline: PDF in input -> TXT -> Akoma Ntoso XML in output."""
 
@@ -387,13 +525,6 @@ def main():
               f" Searched: {search_dir}")
         return
 
-    # Ensure we have a PDF reader
-    if PdfReader is None:
-        raise RuntimeError(
-            "PDF extraction requires 'pypdf' or 'PyPDF2'. Please install one:"
-            "\n  pip install pypdf\n  (or) pip install PyPDF2"
-        )
-
     date_today = datetime.now().strftime("%Y-%m-%d")
     converter = AkomaNtosoConverter(
         jurisdiction="us",
@@ -406,20 +537,13 @@ def main():
         try:
             basename = os.path.splitext(os.path.basename(pdf_path))[0]
             print(f"Reading PDF: {pdf_path}")
-            reader = PdfReader(pdf_path)
-            extracted_lines = []
-            for i, page in enumerate(getattr(reader, "pages", [])):
-                try:
-                    text = page.extract_text() or ""
-                except Exception:
-                    text = ""
-                if text:
-                    text = text.replace("\r\n", "\n").replace("\r", "\n")
-                    extracted_lines.append(text)
-                else:
-                    extracted_lines.append("")
-
-            full_text = "\n\n".join(extracted_lines).strip()
+            full_text = ""
+            if fitz is not None:
+                full_text = extract_pdf_text_with_pymupdf(pdf_path)
+            if not full_text:
+                if fitz is None:
+                    print("Info: PyMuPDF not available; falling back to pypdf without strikeout removal.")
+                full_text = extract_pdf_text_with_pypdf(pdf_path)
             if not full_text:
                 print(f"Warning: Extracted empty text from PDF: {pdf_path}. Skipping.")
                 continue
