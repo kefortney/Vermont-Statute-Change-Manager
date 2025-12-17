@@ -17,13 +17,20 @@ class BaseScraper:
     Base class for scraping Vermont Legislature website
     """
     
+    # Directory name mapping for document types (singular to plural)
+    DIR_MAPPING = {
+        'statute': 'statutes',
+        'bill': 'bills',
+        'act': 'acts'
+    }
+    
     def __init__(self, base_url, document_type):
         """
         Initialize the scraper
         
         Args:
             base_url: Base URL for the document type
-            document_type: Type of document (statute, bill, act)
+            document_type: Type of document (statute, bill, act) - singular form
         """
         self.base_url = base_url
         self.document_type = document_type
@@ -33,8 +40,9 @@ class BaseScraper:
             'User-Agent': USER_AGENT
         })
         
-        # Create subdirectory for this document type
-        self.output_dir = os.path.join(PDF_DIR, document_type)
+        # Create subdirectory for this document type using mapping
+        dir_name = self.DIR_MAPPING.get(document_type, document_type)
+        self.output_dir = os.path.join(PDF_DIR, dir_name)
         os.makedirs(self.output_dir, exist_ok=True)
     
     def fetch_page(self, url):

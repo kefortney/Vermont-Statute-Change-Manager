@@ -14,7 +14,7 @@ class ActScraper(BaseScraper):
     
     def __init__(self):
         """Initialize the act scraper"""
-        super().__init__(ACTS_URL, "acts")
+        super().__init__(ACTS_URL, "act")
     
     def find_pdf_links(self, soup):
         """

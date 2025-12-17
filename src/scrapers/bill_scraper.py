@@ -14,7 +14,7 @@ class BillScraper(BaseScraper):
     
     def __init__(self):
         """Initialize the bill scraper"""
-        super().__init__(BILLS_URL, "bills")
+        super().__init__(BILLS_URL, "bill")
     
     def find_pdf_links(self, soup):
         """

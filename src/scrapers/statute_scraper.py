@@ -13,7 +13,7 @@ class StatuteScraper(BaseScraper):
     
     def __init__(self):
         """Initialize the statute scraper"""
-        super().__init__(STATUTES_URL, "statutes")
+        super().__init__(STATUTES_URL, "statute")
     
     def find_pdf_links(self, soup):
         """

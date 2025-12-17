@@ -4,6 +4,7 @@ Vermont Statute Change Manager
 Main entry point for scraping and converting Vermont legislature documents
 """
 import argparse
+import logging
 import sys
 from src.scrapers import StatuteScraper, BillScraper, ActScraper
 from src.converters import PDFParser, XMLGenerator
@@ -40,7 +41,6 @@ def main():
     args = parser.parse_args()
     
     # Setup logging
-    import logging
     log_level = logging.DEBUG if args.verbose else logging.INFO
     logger = setup_logger('main', log_level)
     
