@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="act">
+    <meta>
+      <identification source="#source">
+        <FRBRWork>
+          <FRBRthis value="/akn/us-vt/act/2025/S-0157 As Introduced/!main"/>
+          <FRBRuri value="/akn/us-vt/act/2025/S-0157 As Introduced"/>
+          <FRBRdate date="2025-12-17" name="Generation"/>
+          <FRBRauthor href="#legislature"/>
+          <FRBRcountry value="us"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/us-vt/act/2025/S-0157 As Introduced/eng@2025-12-17/!main"/>
+          <FRBRuri value="/akn/us-vt/act/2025/S-0157 As Introduced/eng@2025-12-17"/>
+          <FRBRdate date="2025-12-17" name="Expression"/>
+          <FRBRauthor href="#legislature"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/us-vt/act/2025/S-0157 As Introduced/eng@2025-12-17/!main.xml"/>
+          <FRBRuri value="/akn/us-vt/act/2025/S-0157 As Introduced/eng@2025-12-17.xml"/>
+          <FRBRdate date="2025-12-17" name="XMLConversion"/>
+          <FRBRauthor href="#converter"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2025-12-17" name="enacted" showAs="Enacted"/>
+      <references source="#source">
+        <TLCOrganization eId="legislature" href="/akn/us-vt/legislature" showAs="Legislature"/>
+        <TLCOrganization eId="source" href="#" showAs="Original Source"/>
+        <TLCPerson eId="converter" href="#" showAs="Document Converter"/>
+      </references>
+    </meta>
+    <preface>
+      <p>
+        <docType>S-0157 As Introduced</docType>
+      </p>
+    </preface>
+    <preamble>
+      <p>BILL AS INTRODUCED S.157</p>
+      <p>2025 Page 1 of 7</p>
+      <p>VT LEG #383322 v.3</p>
+      <p>S.157 1</p>
+      <p>Introduced by Senators Douglass, Baruth, Beck, Bongartz, Brennan, Brock, 2</p>
+      <p>Chittenden, Clarkson, Collamore, Cummings, Gulick, Harrison, 3</p>
+      <p>Hart, Heffernan, Ingalls, Lyons, Major, Mattos, Norris, 4</p>
+      <p>Perchlik, Plunkett, Ram Hinsdale, Weeks, Westman and 5</p>
+      <p>Williams 6</p>
+      <p>Referred to Committee on  7</p>
+      <p>Date:  8</p>
+      <p>Subject: Health; substance use disorder; recovery residence; certification  9</p>
+      <p>Statement of purpose of bill as introduced:  This bill proposes to establish a 10</p>
+      <p>voluntary recovery residence certification through the Department of Health.  11</p>
+      <p>An act relating to recovery residence certification 12</p>
+      <p>It is hereby enacted by the General Assembly of the State of Vermont:  13</p>
+    </preamble>
+    <body>
+      <section eId="sec_1">
+        <num>Sec. 1.</num>
+        <heading>18 V.S.A. § 4812 is added to read: 14</heading>
+        <subsection eId="sec_1__subsec_4812">
+          <num>§ 4812.</num>
+          <heading>RECOVERY RESIDENCE CERTIFICATION 15</heading>
+          <subsection eId="sec_1__subsec_4812__subsec_a">
+            <num>(a)</num>
+            <content>
+              <p>Definition.  As used in this section, “recovery residence” means a 16</p>
+              <p>shared temporary living residence supporting persons recovering from a 17</p>
+              <p>substance use disorder that provides care through peer support and assistance 18</p>
+              <p>accessing support services and community resources available to persons 19</p>
+              <p>recovering from substance use disorders. 20</p>
+              <p>BILL AS INTRODUCED S.157</p>
+              <p>2025 Page 2 of 7</p>
+              <p>VT LEG #383322 v.3</p>
+            </content>
+          </subsection>
+          <subsection eId="sec_1__subsec_4812__subsec_b">
+            <num>(b)</num>
+            <content>
+              <p>Certification.  Upon receipt of an application from a recovery residence 1</p>
+              <p>in the State seeking certification, the Department shall issue the requested 2</p>
+              <p>certification if it determines that the applicant meets the following minimum 3</p>
+              <p>standards: 4</p>
+            </content>
+          </subsection>
+          <subsection eId="sec_1__subsec_4812__subsec_c">
+            <num>(c)</num>
+            <content>
+              <p>Transferability.  A certification is not transferable or assignable and 7</p>
+              <p>shall be issued only for the premises named in the application. 8</p>
+            </content>
+          </subsection>
+          <subsection eId="sec_1__subsec_4812__subsec_d">
+            <num>(d)</num>
+            <content>
+              <p>Certification renewal.  Annually, a recovery residence seeking renewal 9</p>
+              <p>of its certification under this section shall submit an attestation to the 10</p>
+              <p>Department that the recovery residence continues to maintain its certification 11</p>
+              <p>through either a Vermont affiliate of the National Alliance for Recovery 12</p>
+              <p>Residences or another organization approved by the Department. 13</p>
+            </content>
+          </subsection>
+          <subsection eId="sec_1__subsec_4812__subsec_e">
+            <num>(e)</num>
+            <content>
+              <p>Rulemaking.  The Department shall adopt rules pursuant to 3 V.S.A. 14</p>
+              <p>chapter 25 to carry out the purposes of this section. 15</p>
+            </content>
+          </subsection>
+          <subsection eId="sec_1__subsec_4812__subsec_f">
+            <num>(f)</num>
+            <content>
+              <p>Reporting.  16</p>
+            </content>
+          </subsection>
+          <content>
+            <blockList eId="sec_1__subsec_4812__list_1">
+              <item eId="sec_1__subsec_4812__list_1__item_1">
+                <num>(1)</num>
+                <p>the applicant is certified by either a Vermont affiliate of the National 5</p>
+              </item>
+              <item eId="sec_1__subsec_4812__list_1__item_2">
+                <num>(2)</num>
+                <p>the applicant demonstrates the capacity to operate a recovery 8</p>
+              </item>
+              <item eId="sec_1__subsec_4812__list_1__item_3">
+                <num>(3)</num>
+                <p>the applicant shall fully comply with standards for health, safety, and 11</p>
+              </item>
+              <item eId="sec_1__subsec_4812__list_1__item_4">
+                <num>(4)</num>
+                <p>once certified, the recovery residence, including the buildings and 14</p>
+              </item>
+              <item eId="sec_1__subsec_4812__list_1__item_5">
+                <num>(5)</num>
+                <p>the applicant shall have a clear process for responding to resident 17</p>
+              </item>
+              <item eId="sec_1__subsec_4812__list_1__item_6">
+                <num>(6)</num>
+                <p>The applicant shall fully comply with 9 V.S.A. chapter 137. 6</p>
+              </item>
+              <item eId="sec_1__subsec_4812__list_1__item_1">
+                <num>(1)</num>
+                <p>On or before January 1 of each year, a recovery residence certified 17</p>
+              </item>
+              <item eId="sec_1__subsec_4812__list_1__item_2">
+                <num>(2)</num>
+                <p>On or before February 1 of each year, the Department shall submit 9</p>
+              </item>
+            </blockList>
+            <p>Alliance for Recovery Residences or another organization approved by the 6</p>
+            <p>Department;  7</p>
+            <p>residence in accordance with rules adopted by the Department of Health and in 9</p>
+            <p>a manner that ensures person-centered care and resident dignity; 10</p>
+            <p>sanitation as required by State law, including standards set forth by the State 12</p>
+            <p>Fire Marshal, the Department, and municipal ordinance; 13</p>
+            <p>grounds, shall be subject to inspections by the Department with a ten-day prior 15</p>
+            <p>notice; 16</p>
+            <p>complaints, including: 18</p>
+            <p>(A)  a method by which each resident shall be made aware of the 19</p>
+            <p>complaint procedure; 20</p>
+            <p>BILL AS INTRODUCED S.157</p>
+            <p>2025 Page 3 of 7</p>
+            <p>VT LEG #383322 v.3</p>
+            <p>(B)  an appeals mechanism within a recovery residence; 1</p>
+            <p>(C)  a published time frame for processing and resolving complaints 2</p>
+            <p>and appeals within a recovery residence; and 3</p>
+            <p>(D)  periodic reporting to the Department of the nature of complaints 4</p>
+            <p>filed and action taken; and 5</p>
+            <p>pursuant to this section shall report to the Department with the following data 18</p>
+            <p>from the previous calendar year in a manner approved by the Department, in 19</p>
+            <p>consultation with the Vermont affiliate of the National Alliance for Recovery 20</p>
+            <p>Residences or another organization approved by the Department: 21</p>
+            <p>BILL AS INTRODUCED S.157</p>
+            <p>2025 Page 4 of 7</p>
+            <p>VT LEG #383322 v.3</p>
+            <p>(A)  the number of residents served; 1</p>
+            <p>(B)  the average length of stay at the recovery residence;  2</p>
+            <p>(C)  any exit or transfer of a resident by the recovery residence and 3</p>
+            <p>the asserted basis for exiting or transferring the resident; 4</p>
+            <p>(D)  the number of residents who gained or lost meaningful 5</p>
+            <p>employment during their stay at the recovery residence;  6</p>
+            <p>(E)  budgetary needs; and 7</p>
+            <p>(F)  any other information the Department deems appropriate. 8</p>
+            <p>the data received under subdivision (1) of this subsection in an aggregated 10</p>
+            <p>format to the House Committee on Human Services and the Senate Committee 11</p>
+            <p>on Health and Welfare. 12</p>
+          </content>
+        </subsection>
+      </section>
+      <section eId="sec_2">
+        <num>Sec. 2.</num>
+        <heading>9 V.S.A. § 4452 is amended to read: 13</heading>
+        <subsection eId="sec_2__subsec_4452">
+          <num>§ 4452.</num>
+          <heading>EXCLUSIONS 14</heading>
+          <subsection eId="sec_2__subsec_4452__subsec_a">
+            <num>(a)</num>
+            <content>
+              <p>Unless created to avoid the application of this chapter, this chapter does 15</p>
+              <p>not apply to any of the following: 16</p>
+              <p>* * * 17</p>
+            </content>
+          </subsection>
+          <subsection eId="sec_2__subsec_4452__subsec_b">
+            <num>(b)</num>
+            <content>
+              <p>(1)  Notwithstanding subsections 4463(b) and 4467(b) and section 4468 18</p>
+              <p>of this chapter only, a recovery residence may immediately exit or transfer a 19</p>
+              <p>resident if all of the following conditions are met: 20</p>
+              <p>BILL AS INTRODUCED S.157</p>
+              <p>2025 Page 5 of 7</p>
+              <p>VT LEG #383322 v.3</p>
+              <p>(A)  the recovery residence has developed and adopted a residential 1</p>
+              <p>agreement: 2</p>
+            </content>
+          </subsection>
+          <subsection eId="sec_2__subsec_4452__subsec_i">
+            <num>(i)</num>
+            <content>
+              <p>containing a written exit and transfer policy approved by the 3</p>
+              <p>Vermont Alliance for Recovery Residences or another certifying organization 4</p>
+              <p>approved by the Department of Health that: 5</p>
+              <p>(I)  addresses the length of time that a bed will be held in the 6</p>
+              <p>event of a temporary removal; 7</p>
+              <p>(II)  establishes the criteria by which a resident can return to the 8</p>
+              <p>recovery residence in the event of a temporary removal; and 9</p>
+              <p>(III)  ensures a resident’s possessions will be held not less than 10</p>
+              <p>60 days in the event of permanent removal; 11</p>
+              <p>(ii)  explaining program rules and expected residential social 12</p>
+              <p>standards; 13</p>
+              <p>(iii)  designating alternative housing arrangements for the resident 14</p>
+              <p>in the event of an exit or transfer, including contingency plans when alternative 15</p>
+              <p>housing arrangements are not available; 16</p>
+              <p>(iii)(iv)  describing the recovery residence’s substance use policy, 17</p>
+              <p>which shall exempt the use of a resident’s valid prescription medication when 18</p>
+              <p>used as prescribed; and 19</p>
+              <p>(iv)(v)  indicating that by signing a residential agreement, a 20</p>
+              <p>resident acknowledges that the recovery residence may cause the resident to be 21</p>
+              <p>BILL AS INTRODUCED S.157</p>
+              <p>2025 Page 6 of 7</p>
+              <p>VT LEG #383322 v.3</p>
+              <p>immediately exited or transferred to alternative housing if the resident violates 1</p>
+              <p>the recovery residence’s substance use policy, regularly refuses to engage in 2</p>
+              <p>services or programming, commits a crime, engages in theft, is mentally or 3</p>
+              <p>physically interfering with the recovery of other residents, or engages in acts of 4</p>
+              <p>violence that threaten the health or safety of other residents or recovery 5</p>
+              <p>residence staff; 6</p>
+              <p>(B)  the recovery residence has obtained the resident’s written consent 7</p>
+              <p>to its residential agreement, reaffirmed after seven days; 8</p>
+              <p>(C)  the resident violated the substance use policy in the residential 9</p>
+              <p>agreement, regularly refuses to engage in services or programming, commits a 10</p>
+              <p>crime, engages in theft, is mentally or physically interfering with the recovery 11</p>
+              <p>of other residents, or engaged in acts of violence that threatened the health or 12</p>
+              <p>safety of other residents or recovery residence staff; and 13</p>
+              <p>(D)  the recovery residence has provided or arranged for a 14</p>
+              <p>stabilization bed or other alternative temporary housing. 15</p>
+            </content>
+          </subsection>
+          <content>
+            <blockList eId="sec_2__subsec_4452__list_1">
+              <item eId="sec_2__subsec_4452__list_1__item_2">
+                <num>(2)</num>
+                <p>Relapse of a substance use disorder resulting in exiting a recovery 16</p>
+              </item>
+              <item eId="sec_2__subsec_4452__list_1__item_3">
+                <num>(3)</num>
+                <p>As used in this subsection, “recovery residence” means a shared 19</p>
+              </item>
+            </blockList>
+            <p>residence shall not be deemed a cause of the resident’s own homelessness for 17</p>
+            <p>purposes of obtaining emergency housing. 18</p>
+            <p>living residence supporting persons recovering from a substance use disorder 20</p>
+            <p>that: 21</p>
+            <p>BILL AS INTRODUCED S.157</p>
+            <p>2025 Page 7 of 7</p>
+            <p>VT LEG #383322 v.3</p>
+            <p>(A)  provides tenants with peer support and assistance accessing 1</p>
+            <p>support services and community resources available to persons recovering 2</p>
+            <p>from substance use disorders; and 3</p>
+            <p>(B)  is certified by an organization approved by the Department of 4</p>
+            <p>Health and that is either a Vermont affiliate of the National Alliance for 5</p>
+            <p>Recovery Residences or another approved organization has the same meaning 6</p>
+            <p>as in 18 V.S.A. § 4812. 7</p>
+          </content>
+        </subsection>
+      </section>
+      <section eId="sec_3">
+        <num>Sec. 3.</num>
+        <heading>2024 Acts and Resolves No. 163, Sec. 5 is amended to read: 8</heading>
+      </section>
+      <section eId="sec_5">
+        <num>Sec. 5.</num>
+        <heading>SUNSET; RECOVERY RESIDENCES; RESIDENTIAL 9</heading>
+        <content>
+          <p>AGREEMENT; REPORTING 10</p>
+          <p>(a)  9 V.S.A. § 4452(b) is repealed on July 1, 2026. [Repealed.] 11</p>
+          <p>(b)  Sec. 4 (report; recovery residences’ exit and transfer data) is repealed 12</p>
+          <p>on July 1, 2026. 13</p>
+        </content>
+      </section>
+      <section eId="sec_4">
+        <num>Sec. 4.</num>
+        <heading>EFFECTIVE DATE 14</heading>
+        <content>
+          <p>This act shall take effect on July 1, 2026. 15</p>
+        </content>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>
