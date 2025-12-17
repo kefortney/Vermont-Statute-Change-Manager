@@ -1,40 +1,50 @@
 It is hereby enacted by the General Assembly of the State of Vermont:11
-Sec. 1. APPROVAL OF MERGER12
-The general assembly approves the plan of merger of the Town of Cabot
-and the Village of Cabot as set forth in this act. The plan of merger was
-approved by the voters of the Town of Cabot and the voters of the Village of
-Cabot on March 2, 2010.
-Sec. 2. PLAN OF MERGER1
-CHAPTER 1. MERGER
-SECTION 101. MERGER OF THE VILLAGE AND TOWN OF CABOT
-Effective as of midnight at the end of December 31, 2010, the Village of
-Cabot, as constituted by No. 172 of the Acts of 1866, as amended, shall merge
-with and into the Town of Cabot within its present geographic limits, as a
-single municipal corporation under the name of the Town of Cabot, and the
-Village of Cabot shall, except as hereinafter specifically provided, cease to
-exist as a political entity or body corporate and its charter shall be abolished.
-SECTION 102. ASSETS TRANSFERRED AND LIABILITIES ASSUMED
-(a) Upon the effective merger date, all assets of whatever kind, nature, and
-description, including lands; easements; rights and interests in lands; buildings
-and other improvements; vehicles, equipment, and other personal property;
-funds; grants; assessed but uncollected taxes and charges, including water rents
-and charges, together with the lien rights and enforcement powers of the
-Village of Cabot therefor; monies; rights, claims, actions, and contracts; rights
-of action in legal or administrative proceedings; insurance policies; and
-documents and records owned, claimed, or held by the Village of Cabot shall
-become vested in and become assets owned by the Town of Cabot without any
-further act, deed, or instrument being necessary.
-(b) Any and all property held in trust by the trustees of the Village of Cabot
-or any officer thereof shall become vested in the selectboard of the Town of
-Cabot and their successors, or in the respective officer of the town and his or
-her successor, as the case may be, and shall continue to be held in trust for the
-same uses as before the merger, all without any further act, deed, or instrument
-being necessary.
-(c) Upon the effective merger date, the Town of Cabot shall assume and be
-obligated to pay or otherwise perform each and every lawful obligation, debt,
-claim, bonded indebtedness, and other liability of the Village of Cabot without
-any further act, deed, or instrument being necessary.
-(d) Prior to the effective merger date, the officers of the Village of Cabot
-shall settle, so far as possible, the financial affairs of the Village of Cabot and,
-on that date, turn over to the proper officers of the Town of Cabot all records,
-books, documents, and property of the Village of Cabot.
+Sec. 1. CHARTER APPROVAL
+The general assembly approves the amendments to the charter of the town
+of Berlin as provided in this act. Proposals of amendment were approved by
+the voters on March 2, 2010.
+Sec. 2. 24 App. V.S.A. chapter 105 § 42 is amended to read:16
+§ 42. ELECTED OFFICERS
+The following officers of the town and such other town officers as are
+provided by law and previous vote of the electorate as to number, length of
+term and manner of election at an annual meeting shall be elected by
+Australian ballot, unless otherwise stated, and shall include the following:
+(1) A moderator to be elected by paper ballot from the floor, for a term
+of one year;
+(2) A town clerk, for a term of three years;
+(3) Selectboard members, three of whom shall serve staggered three6
+year terms and two of whom shall serve one year terms;
+(4) Listers, for terms of three years, staggered to ensure no more than
+one term ends in any particular year;
+(5) Such other town officers as the town shall order as provided by law.
+Sec. 3. 24 App. V.S.A. chapter 105 § 50 is added to read:
+§ 50. ASSESSOR
+(a) The selectboard may appoint an assessor or arrange for assessing services.
+Appointees shall be competent in assessment procedures and shall serve at the
+pleasure of the selectboard.
+(b) Prior to appointing an assessor, the selectboard shall appoint a committee,
+composed of three members of the selectboard and four residents of the town of
+Berlin, to review and recommend to the selectboard qualified candidates for the
+position of assessor. The committee shall have the authority to solicit candidates,
+to advertise notice of the vacancy in the assessor’s position, and to make such
+investigation of a candidate’s credentials and background as the committee deems
+appropriate. Upon completion of the investigation and interviewing of candidates,
+the committee shall submit to the selectboard the names of those candidates
+deemed qualified for the position of assessor. The selectboard shall appoint an
+assessor from among those deemed qualified by the committee. In the event that
+the committee does not submit at least three qualified candidates to the selectboard,
+the selectboard shall either appoint an assessor from among the qualified candidates
+or notify the committee, in writing, that none of the candidates shall be appointed.
+The committee shall then reconvene and submit the names of additional qualified
+candidates to the selectboard.
+(c) The selectboard shall appoint an assessor or, if applicable, notify the
+committee that none of the candidates shall be appointed, no later than 30 days
+following submission of the names of candidates deemed qualified by the
+committee.
+(d) Members of the committee described in subsection (b) of this section shall
+serve until an assessor is appointed by the selectboard. Meetings of the committee
+shall be warned and conducted as public meetings in accordance with the
+requirements of Vermont statutes and this charter, and the committee shall be
+entitled to meet in executive session as authorized by Vermont statutes.
+Sec. 4. EFFECTIVE DATE
+This act shall take effect upon passage.
