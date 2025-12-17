@@ -485,7 +485,19 @@ def extract_pdf_text_with_pymupdf(pdf_path: str) -> str:
                 if text_line:
                     lines_out.append(text_line)
         pages_text.append("\n".join(lines_out))
-    return "\n\n".join(pages_text).strip()
+    raw = "\n\n".join(pages_text).strip()
+    # Heuristic cleanup: remove likely old values when a replacement follows
+    try:
+        # Case 1: monetary amounts like "$.85 $0.85" -> keep "$0.85"
+        raw = re.sub(r"\$\.?\d+(?:\.\d+)?(?=\s*\$\d)", "", raw)
+        # Case 2: decimals like ".0175 0.0225" -> keep the latter
+        raw = re.sub(r"(?<!\d)\.\d+(?=\s*0?\.\d+)", "", raw)
+        # Normalize excessive spaces created by removals
+        raw = re.sub(r"[ \t]{2,}", " ", raw)
+        raw = re.sub(r"\n +", "\n", raw)
+    except Exception:
+        pass
+    return raw
 
 
 def extract_pdf_text_with_pypdf(pdf_path: str) -> str:
