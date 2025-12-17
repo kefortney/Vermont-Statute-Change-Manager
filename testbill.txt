@@ -1,9 +1,9 @@
-It is hereby enacted by the General Assembly of the State of Vermont:11
+It is hereby enacted by the General Assembly of the State of Vermont:
 Sec. 1. CHARTER APPROVAL
 The general assembly approves the amendments to the charter of the town
 of Berlin as provided in this act. Proposals of amendment were approved by
 the voters on March 2, 2010.
-Sec. 2. 24 App. V.S.A. chapter 105 § 42 is amended to read:16
+Sec. 2. 24 App. V.S.A. chapter 105 § 42 is amended to read:
 § 42. ELECTED OFFICERS
 The following officers of the town and such other town officers as are
 provided by law and previous vote of the electorate as to number, length of
@@ -12,16 +12,17 @@ Australian ballot, unless otherwise stated, and shall include the following:
 (1) A moderator to be elected by paper ballot from the floor, for a term
 of one year;
 (2) A town clerk, for a term of three years;
-(3) Selectboard members, three of whom shall serve staggered three6
+(3) Selectboard members, three of whom shall serve staggered three
 year terms and two of whom shall serve one year terms;
-(4) Listers, for terms of three years, staggered to ensure no more than
-one term ends in any particular year;
-(5) Such other town officers as the town shall order as provided by law.
+
+Such other town officers as the town shall order as provided by law.
 Sec. 3. 24 App. V.S.A. chapter 105 § 50 is added to read:
 § 50. ASSESSOR
-(a) The selectboard may appoint an assessor or arrange for assessing services.
-Appointees shall be competent in assessment procedures and shall serve at the
-pleasure of the selectboard.
+(a) The selectboard may appoint an assessor or arrange for assessing
+services. Appointees shall be competent in assessment procedures and shall
+serve at the pleasure of the selectboard. Appointees shall have the same
+powers, duties, responsibilities, and liabilities as established by law for listers,
+except as otherwise provided in this charter.
 (b) Prior to appointing an assessor, the selectboard shall appoint a committee,
 composed of three members of the selectboard and four residents of the town of
 Berlin, to review and recommend to the selectboard qualified candidates for the
@@ -48,3 +49,5 @@ requirements of Vermont statutes and this charter, and the committee shall be
 entitled to meet in executive session as authorized by Vermont statutes.
 Sec. 4. EFFECTIVE DATE
 This act shall take effect upon passage.
+Approved: May 19, 2010
+
